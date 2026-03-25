@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Attendance Log</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+```
+
+---
+
+## Step 5 — Connect your folder to GitHub
+
+In Terminal / Command Prompt, navigate to your folder:
+```
+cd path/to/attendance-log
+```
+
+Then run these commands one at a time:
+```
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/attendance-log.git
+git push -u origin main
+```
+
+Replace `YOUR-USERNAME` with your actual GitHub username. The URL is also shown on your repo page under the green **Code** button.
+
+GitHub will ask for your username and password the first time. For the password, use a **Personal Access Token** — go to **github.com → Settings → Developer settings → Personal access tokens → Tokens (classic) → Generate new token**, check the `repo` scope, and use that as your password.
+
+---
+
+## Step 6 — Updating it in the future
+
+Whenever you make changes to any file, just run these three commands from that folder:
+```
+git add .
+git commit -m "describe what you changed"
+git push
+```
+
+That's it. Every update is versioned and timestamped — you'll have a full history of every change ever made to the log.
+
+---
+
+## Optional — View it in your browser locally
+
+If you want to actually run the app on your computer:
+```
+npm install
+npm start
